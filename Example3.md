@@ -31,7 +31,7 @@ Work out, or use the Python shell to calculate, these sums:
 20%6
 ```
 
-The answers will be a repeating pattern 0 1 2 3 4 5. This is exactly the sequence of numbers we need to be able to take colours from the colour list and loop back to the first colour when we get to the end. So we can rewrite the loop to give the turtles colours like this:
+The answers will be a repeating pattern 0 1 2 3 4 5. This is exactly the sequence of numbers we need to be able to take colours from the colour list and loop back to the first colour when we get to the end of the list. So we can rewrite the loop to give the turtles colours like this:
 ```
 for i in range(20):
     myturtles[i].color(mycolours[i%6])
