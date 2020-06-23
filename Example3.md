@@ -3,7 +3,7 @@
 In this example, say you are coding a turtle race and you want 20 turtles. We can put these turtles in a list:
 ```
 myturtles = [turtle1, turtle2, turtle3, ...... turtle20]
-
+```
 
 You want them to have different colours but you only have six colours to choose from. You could put your colours in a list as well :
 ```
