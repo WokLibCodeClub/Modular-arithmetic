@@ -70,7 +70,7 @@ Just three lines! All because of the Python ```%``` operator.
 
 Actually, you can combine the last two lines, because Python can do calculations **inside** a ```print()``` statement, so we don't really need the variable ```result```:
 ```
-print(results[(your_number - computer_number)%3])
+print(outcomes[(your_number - computer_number)%3])
 ```
 
 Go back to [index for Modulo Division](README.md)
