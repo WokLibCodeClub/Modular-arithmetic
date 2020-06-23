@@ -22,7 +22,8 @@ To investigate these remainders try doing modulo division by 3 for the numbers f
 .
 .
 .
-8%3```
+8%3
+```
 
 You should see that the remainders follow a repeating pattern. Because we did mod division by 3 this pattern is 3 numbers long.
 
