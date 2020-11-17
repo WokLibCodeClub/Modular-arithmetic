@@ -16,9 +16,9 @@ Let's look at all the possibilities where you beat the computer:
   your                     computer's                         your_choice minus
  choice   your_choice =      choice      computer_choice =     computer_choice
 --------  -------------    ----------    -----------------    ------------------
- Paper          1            Rock                0                 1-0 = 1
+ Paper          1             Rock               0                 1-0 = 1
 Scissors        2            Paper               1                 2-1 = 1
- Rock           0           Scissors             2                 0-2 = -2
+  Rock          0           Scissors             2                 0-2 = -2
 ```
 You can see that when you win the value of the ```your_choice``` variable is bigger than the value of the ```computer_choice``` variable, except for the annoying case where you chose *rock* and the computer chose *scissors*.  One way for Python to tell which of two numbers is bigger is to subtract one from the other: if the answer is positive then the first number is bigger, and if the answer is negative then the second number is bigger. In the last column I have shown the answers if you subtract the ```computer_choice``` variable from the ```your_choice``` variable. The answer is always 1, except for the last line, where the answer is -2.
 
@@ -28,9 +28,9 @@ The subtraction gives 1 or -2 if you defeat the computer. But what if we use mod
   your                     computer's                         your_choice minus     modulo division
  choice   your_choice =      choice      computer_choice =     computer_choice           by 3
 --------  -------------    ----------    -----------------    -----------------     ---------------
- Paper          1            Rock                0                 1-0 = 1            (1-0)%3 = 1
+ Paper          1             Rock               0                 1-0 = 1            (1-0)%3 = 1
 Scissors        2            Paper               1                 2-1 = 1            (2-1)%3 = 1
- Rock           0           Scissors             2                 0-2 = -2           (0-2)%3 = 1
+  Rock          0           Scissors             2                 0-2 = -2           (0-2)%3 = 1
 ```
 We see that whenever you beat the computer, the subtraction followed by mod division by 3 is always 1. 
 
@@ -41,8 +41,8 @@ Now let's draw a table for all the possibilities where the computer beats you:
  choice   your_choice =      choice      computer_choice =     computer_choice           by 3
 --------  -------------    ----------    -----------------    -----------------     ---------------
  Paper          1           Scissors             2                 1-2 = -1           (1-2)%3 = 2
-Scissors        2            Rock                0                 2-0 = 2            (2-0)%3 = 2
- Rock           0            Paper               1                 0-1 = -1           (0-1)%3 = 2
+Scissors        2             Rock               0                 2-0 = 2            (2-0)%3 = 2
+  Rock          0            Paper               1                 0-1 = -1           (0-1)%3 = 2
 ```
 We see that whenever the computer beats you, the subtraction followed by mod division by 3 is always 2.
 
@@ -62,7 +62,7 @@ The code will print one of these three outcomes after each game.
 result = (your_choice - computer_choice) % 3
 ```
 
-3. Use the variable ```result``` as the index for the item to print from the list of outcomes. So if result = 0 (meaning it was a draw) Python will print the item in the list with index 0 (the first item), if result = 1 (meaning you beat the computer) Python will print the second item in the list and if result = 2 (meaning the computer beat you) Python will print the third item:
+3. Use the variable ```result``` as the index for the item to print from the list of outcomes. So if result = 0 (meaning it was a draw) Python will print the item in the list with index 0 (the first item); if result = 1 (meaning you beat the computer) Python will print the second item in the list and if result = 2 (meaning the computer beat you) Python will print the third item:
 ```
 print(outcomes[result])
 ```
