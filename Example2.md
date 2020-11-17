@@ -8,7 +8,7 @@ In the computer game you select which shape to make, and the computer chooses on
 
 In the Raspberry Pi Foundation/Code Club project there is a complicated ```if``` block to work out the winner, but we can make this much simpler using modulo arithmetic. Here's how.
 
-Lets give Rock the number 0, Paper the number 1 and Scissors the number 2, so if you choose Rock your choice is 0 and if the computer randomly chooses Scissors the computer's choice is 2. We will create variables called ```your_choice``` and ```computer_choice``` and then subtract ```computer_choice``` from ```your_choice```.
+Let's give Rock the number 0, Paper the number 1 and Scissors the number 2, so if you choose Rock your choice is 0 and if the computer randomly chooses Scissors the computer's choice is 2. We will create variables called ```your_choice``` and ```computer_choice``` and then subtract ```computer_choice``` from ```your_choice```.
 
 Let's look at all the possibilities where you beat the computer:
 
