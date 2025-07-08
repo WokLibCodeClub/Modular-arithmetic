@@ -40,6 +40,9 @@ The repeating pattern of remainders also extends into negative numbers. You can 
 
 You will see that the repeating pattern 0 1 2 continues back beyond 0 into the negative numbers.
 
+There is a trinket project you can experiment with - it generates lists of the remainders for your chosen sequence of numbers, for your chosen "divisor" (that's the posh word for the number you divide by). The link is
+[trinket.io/python/f1cea60d34](https://trinket.io/python/f1cea60d34)
+
 Here are three ways we can use modulo division in Python coding:
 
 [Code Club Python project *Secret Messages*](Example1.md)
